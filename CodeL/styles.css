@@ -252,7 +252,7 @@ span {
 
 
 .catalog-block {
-    min-height: calc(100vh - 70vmin + 100px);
+    min-height: calc(100vh - 70vmin);
 }
 
 .catalog-content {
