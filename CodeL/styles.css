@@ -251,8 +251,11 @@ span {
 
 
 
+.catalog-block {
+    min-height: calc(100vh - 70vmin + 100px);
+}
+
 .catalog-content {
-    min-height: 35vmin;
     flex-wrap: wrap;
     align-items: stretch;
 }
