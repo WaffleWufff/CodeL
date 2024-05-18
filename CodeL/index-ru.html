@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> CodeL </title>
+        <link href="resources/main/icon.svg" rel="icon">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="scripts.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <div class="header wrapper"> 
+                <svg height="45%" viewBox="0 0 481.41 80.37">
+                    <defs>
+                      <style>
+                        .logo {
+                          fill: url(#blueGradient);
+                          stroke-width: 0px;
+                        }
+                      </style>
+                      <linearGradient id="blueGradient" data-name="blueGradient" x1="0" y1="40.19" x2="481.41" y2="40.19" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#7bd5f5"/>
+                        <stop offset=".04" stop-color="#7ac9f5"/>
+                        <stop offset=".12" stop-color="#79abf5"/>
+                        <stop offset=".22" stop-color="#787ff6"/>
+                        <stop offset=".49" stop-color="#4adede"/>
+                        <stop offset=".75" stop-color="#1ca7ec"/>
+                        <stop offset=".8" stop-color="#1ca3e9"/>
+                        <stop offset=".84" stop-color="#1c97e0"/>
+                        <stop offset=".89" stop-color="#1c83d3"/>
+                        <stop offset=".93" stop-color="#1d67bf"/>
+                        <stop offset=".98" stop-color="#1e44a7"/>
+                        <stop offset="1" stop-color="#1f2f98"/>
+                      </linearGradient>
+                    </defs>
+                    <path class="logo" d="M44.83,80.37c-14.5,0-25.6-3.38-33.3-10.14C3.85,63.47,0,53.43,0,40.13S3.85,16.89,11.54,10.09C19.23,3.29,30.33-.07,44.83,0l39.56.22v14.19h-38.35c-9.52,0-16.59,2.03-21.21,6.1-4.62,4.06-6.92,10.61-6.92,19.62s2.31,15.57,6.92,19.68,11.68,6.15,21.21,6.15h39.45v14.41h-40.66ZM136.7,80.37c-9.82,0-17.47-2.46-22.97-7.37-5.49-4.91-8.24-12.14-8.24-21.67s2.75-16.87,8.24-21.78c5.49-4.91,13.15-7.37,22.97-7.37h20.33c9.82,0,17.47,2.46,22.97,7.37,5.5,4.92,8.24,12.18,8.24,21.78s-2.75,16.76-8.24,21.67c-5.49,4.92-13.15,7.37-22.97,7.37h-20.33ZM136.7,67.62h20.33c4.76,0,8.41-1.33,10.93-3.99,2.53-2.66,3.79-6.76,3.79-12.3s-1.26-9.76-3.79-12.42c-2.53-2.66-6.17-3.99-10.93-3.99h-20.33c-4.76,0-8.41,1.33-10.93,3.99-2.53,2.66-3.79,6.8-3.79,12.42s1.26,9.64,3.79,12.3c2.53,2.66,6.17,3.99,10.93,3.99ZM239.99,79.82c-9.82,0-17.47-2.44-22.97-7.32s-8.24-11.93-8.24-21.17,2.75-16.41,8.24-21.28,13.15-7.32,22.97-7.32h36.81v12.75h-36.81c-4.76,0-8.41,1.31-10.93,3.94-2.53,2.62-3.79,6.6-3.79,11.92s1.26,9.18,3.79,11.81c2.53,2.62,6.17,3.94,10.93,3.94h37.91v12.75h-37.91ZM264.72,79.82V.56h15.93v79.26h-15.93ZM334.6,80.37c-9.82,0-17.47-2.46-22.97-7.37-5.49-4.91-8.24-12.14-8.24-21.67s2.75-16.87,8.24-21.78c5.5-4.91,13.15-7.37,22.97-7.37h27.47c6.45,0,11.37,1.53,14.78,4.6,3.41,3.07,5.11,7.45,5.11,13.14,0,11.6-6.63,17.4-19.89,17.4h-41.54c1.54,6.87,6.23,10.31,14.07,10.31h44.5v12.75h-44.5ZM334.6,34.92c-7.55,0-12.2,3.21-13.96,9.64h40.66c1.46,0,2.62-.44,3.46-1.33.84-.89,1.26-2.11,1.26-3.66,0-3.1-1.58-4.66-4.72-4.66h-26.7ZM406.36,79.82V.56h17.58v64.85h57.47v14.41h-75.05Z"/>
+                </svg>
+                <div class="top-buttons-container"> 
+                    <button class="top-button" onclick="languageSwitch('en');" title="Переключить язык"> 
+                        <svg class="btn-icon" width="70" height="70" fill="none" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z"/>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12H12H19"/>
+                        </svg>
+                    </button>
+                    <button class="top-button" onclick="toggleTheme();" title="Переключить тему"> 
+                        <svg class="btn-icon" width="70px" height="70px" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.25 15.7499C17.2352 16.2904 16.23 16.25 15 16.25C10.9959 16.25 7.75 13.0041 7.75 9.00001C7.75 7.77001 7.70951 6.76474 8.25 5.74994C5.96125 6.96891 4.75 9.2259 4.75 12C4.75 16.004 7.99594 19.25 12 19.25C14.7741 19.25 17.031 18.0387 18.25 15.7499Z"/>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 4.75C16 6.95914 14.9591 9 12.75 9C14.9591 9 16 11.0409 16 13.25C16 11.0409 17.0409 9 19.25 9C17.0409 9 16 6.95914 16 4.75Z"/>
+                        </svg>
+                    </button>
+                    <button class="top-button" onclick="toggleTheme();" style="display: none;" title="Переключить тему"> 
+                        <svg class="btn-icon" height="70px" width="70px" fill="none" viewBox="0 0 24 24">
+                            <circle stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" cx="12" cy="12" r="3.2"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M12,3.6v2.8"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M17.6,6.4l-1.9,1.9"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M20.4,12h-2.8"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M17.6,17.6l-1.9-1.9"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M12,17.6v2.8"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M8.3,15.7l-1.9,1.9"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M6.4,12H3.6"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M8.3,8.3L6.4,6.4"/>
+                        </svg>
+                        
+                    </button>
+                    <button class="top-button" onclick="backToSearch();" title="Вернуться к поиску"> 
+                        <svg class="btn-icon" width="70" height="70" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="search-block">
+                <div class="search-block-content wrapper">
+                    <span class="tagline"> Программируй, зная <span> выбор </span> !</span>
+                    <form class="searchbar" onsubmit="return false;">
+                        <input type="search" placeholder="Поиск по названию" onfocus="searchbarFocus();" onblur="searchbarUnfocus();">
+                        <button type="submit" onclick="searchByName();">
+                            <svg class="btn-icon" height="90%" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M77 77L58.3793 58.3793M5 36.0345C5 18.8946 18.8946 5 36.0345 5C53.1745 5 67.069 18.8946 67.069 36.0345C67.069 53.1745 53.1745 67.069 36.0345 67.069C18.8946 67.069 5 53.1745 5 36.0345Z" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>   
+                        </button>
+                    </form>   
+                    <div class="categories-container">
+                        <button class="category" onclick="searchByCategory('All');"> Все категории </button>
+                        <button class="category" onclick="searchByCategory('Web');"> Веб-разработка </button>
+                        <button class="category" onclick="searchByCategory('Games');"> Разработка игр </button>
+                        <button class="category" onclick="searchByCategory('Apps');"> Разработка приложений </button>
+                        <button class="category" onclick="searchByCategory('Mobile');"> Мобильная разработка </button>
+                        <button class="category" onclick="searchByCategory('OSs');"> Разработка ОС </button>
+                        <button class="category" onclick="searchByCategory('DS');"> Работа с данными </button>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-block">
+                <div class="catalog-content wrapper">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B7%D1%8B%D0%BA_%D0%B0%D1%81%D1%81%D0%B5%D0%BC%D0%B1%D0%BB%D0%B5%D1%80%D0%B0" target="_blank" id="assemblylanguage" class="OSs">
+                        <article>
+                            <img src="resources/pl_logos/ASM.svg" alt="Assembly Language logo" height="200px" width="200px">
+                            <h1> Assembly Language </h1>
+                            <p>Низкоуровневый язык программирования, позволяющий напрямую управлять аппаратурой компьютера.</p>
+                        </article> 
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank" id="c" class="OSs">
+                        <article>
+                            <img src="resources/pl_logos/C.svg" alt="C logo" height="200px" width="200px">
+                            <h1> C </h1>
+                            <p>Низкоуровневый язык программирования, широко используемый для разработки операционных систем и системного программирования.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/C_Sharp" target="_blank" id="c#" class="Games Apps">
+                        <article>
+                            <img src="resources/pl_logos/C_sharp.svg" alt="C# logo" height="200px" width="200px">
+                            <h1> C# </h1>
+                            <p>Объектно-ориентированный язык программирования, разработанный Microsoft, часто применяется для создания приложений под платформу .NET.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/C%2B%2B" target="_blank" id="c++" class="Games Apps DS">
+                        <article>
+                            <img src="resources/pl_logos/C++.svg" alt="C++ logo" height="200px" width="200px">
+                            <h1> C++ </h1>
+                            <p>Высокоуровневый язык программирования, расширение языка C, используется для разработки системного и прикладного программного обеспечения.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Clojure" target="_blank" id="clojure" class="Web Mobile Games DS">
+                        <article>
+                            <img src="resources/pl_logos/Clojure.svg" alt="Clojure logo" height="200px" width="200px">
+                            <h1> Clojure </h1>
+                            <p>Современный диалект Lisp, язык программирования общего назначения с поддержкой разработки в интерактивном режиме, поощряющий функциональное программирование и упрощающий поддержку многопоточности.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank" id="css" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/CSS.svg" alt="CSS logo" height="200px" width="200px">
+                            <h1> CSS </h1>
+                            <p>Формальный язык декодирования и описания внешнего вида документа, написанного с использованием языка разметки.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Dart" target="_blank" id="dart" class="Web Mobile Apps">
+                        <article>
+                            <img src="resources/pl_logos/Dart.svg" alt="Dart logo" height="200px" width="200px">
+                            <h1> Dart </h1>
+                            <p>Объектно-ориентированный язык программирования, созданный Google, используется для разработки мобильных и веб-приложений.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Delphi_(%D1%81%D1%80%D0%B5%D0%B4%D0%B0_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8)" target="_blank" id="delphi" class="Apps Mobile Web">
+                        <article>
+                            <img src="resources/pl_logos/Delphi.svg" alt="Delphi logo" height="200px" width="200px">
+                            <h1> Delphi </h1>
+                            <p>Высокоуровневый язык программирования, широко используемый для разработки приложений под Windows.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Elixir_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank" id="elixir" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/Elixir.svg" alt="Elixir logo" height="200px" width="200px">
+                            <h1> Elixir </h1>
+                            <p>Функциональный язык программирования, работающий на виртуальной машине Erlang, применяется для создания распределенных и отказоустойчивых систем.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/F_Sharp" target="_blank" id="f#" class="Apps DS">
+                        <article>
+                            <img src="resources/pl_logos/F_Sharp.svg" alt="F# logo" height="200px" width="200px">
+                            <h1> F# </h1>
+                            <p>Мультипарадигмальный язык программирования из семейства языков .NET, поддерживающий функциональное программирование в дополнение к императивному и объектно-ориентированному программированию.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Go" target="_blank" id="go" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/Go.svg" alt="Go logo" height="200px" width="200px">
+                            <h1> Go </h1>
+                            <p>Компилируемый язык программирования, разработанный Google, часто используется для создания сетевых приложений и облачных сервисов.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank" id="html" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/HTML.svg" alt="HTML logo" height="200px" width="200px">
+                            <h1> HTML </h1>
+                            <p>Стандартизированный язык гипертекстовой разметки документов, который используется для структурирования и отображения веб-страницы и её контента.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Java" target="_blank" id="java" class="Web Games Apps DS Mobile">
+                        <article>
+                            <img src="resources/pl_logos/Java.svg" alt="Java logo" height="200px" width="200px">
+                            <h1> Java </h1>
+                            <p>Объектно-ориентированный язык программирования, широко применяется для создания корпоративных приложений и веб-приложений.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank" id="javascript" class="Web Mobile">
+                        <article>
+                            <img src="resources/pl_logos/JavaScript.svg" alt="JavaScript logo" height="200px" width="200px">
+                            <h1> JavaScript </h1>
+                            <p>Скриптовый язык программирования, который применяется для создания интерактивных веб-страниц.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Kotlin" target="_blank" id="kotlin" class="Mobile Web Apps">
+                        <article>
+                            <img src="resources/pl_logos/Kotlin.svg" alt="Kotlin logo" height="200px" width="200px">
+                            <h1> Kotlin </h1>
+                            <p>Статически типизированный язык программирования, совместимый с Java, широко применяется для разработки Android-приложений и веб-приложений.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Lua" target="_blank" id="lua" class="Games">
+                        <article>
+                            <img src="resources/pl_logos/Lua.svg" alt="Lua logo" height="200px" width="200px">
+                            <h1> Lua </h1>
+                            <p>Легковесный скриптовый язык программирования, часто используется в различных приложениях и играх для расширения функциональности.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/MATLAB" target="_blank" id="matlab" class="DS">
+                        <article>
+                            <img src="resources/pl_logos/Matlab.svg" alt="Matlab logo" height="200px" width="200px">
+                            <h1> Matlab </h1>
+                            <p>Высокоуровневый интерпретируемый язык программирования для разработки, выполнения инженерных и математических расчетов, работы с матричными базами данных, визуализации.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Objective-C" target="_blank" id="objectivec" class="Mobile Apps">
+                        <article>
+                            <img src="resources/pl_logos/OBJ-C.svg" alt="Objective-C logo" height="200px" width="200px">
+                            <h1> Objective-C </h1>
+                            <p>Язык программирования, применяемый разработчиками Apple. Используется для операционных систем macOS и iOS, многие приложения которых написаны на Objective-C.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/PHP" target="_blank" id="php" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/PHP.svg" alt="PHP logo" height="200px" width="200px">
+                            <h1> PHP </h1>
+                            <p>Распространённый язык программирования общего назначения с открытым исходным кодом, сконструирован для веб-разработок и его код может внедряться непосредственно в HTML.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Python" target="_blank" id="python" class="DS Apps Web Games">
+                        <article>
+                            <img src="resources/pl_logos/Python.svg" alt="Python logo" height="200px" width="200px">
+                            <h1> Python </h1>
+                            <p>Высокоуровневый язык программирования, известный своей простотой и читаемостью кода, часто используется для разработки веб-приложений, научных вычислений и автоматизации задач.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/R_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank" id="r" class="DS">
+                        <article>
+                            <img src="resources/pl_logos/R.svg" alt="R logo" height="200px" width="200px">
+                            <h1> R </h1>
+                            <p>Язык программирования и среда разработки, специализирующиеся на статистическом анализе и визуализации данных.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Ruby" target="_blank" id="ruby" class="Web Apps">
+                        <article>
+                            <img src="resources/pl_logos/Ruby.svg" alt="Ruby logo" height="200px" width="200px">
+                            <h1> Ruby </h1>
+                            <p>Динамический язык программирования, известный своей простотой и продуктивностью, часто используется для веб-разработки.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Rust_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank" id="rust" class="OSs Web">
+                        <article>
+                            <img src="resources/pl_logos/Rust.svg" alt="Rust logo" height="200px" width="200px">
+                            <h1> Rust </h1>
+                            <p>Системный язык программирования с упором на безопасность и производительность, широко применяется для разработки системного программного обеспечения.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Scala_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank" id="scala" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/Scala.svg" alt="Scala logo" height="200px" width="200px">
+                            <h1> Scala </h1>
+                            <p>Мультипарадигменный язык программирования, работающий на платформе Java, часто используется для создания распределенных приложений.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/SQL" target="_blank" id="sql" class="DS Web">
+                        <article>
+                            <img src="resources/pl_logos/SQL.svg" alt="SQL logo" height="200px" width="200px">
+                            <h1> SQL </h1>
+                            <p>Структурированный язык запросов к базам данных, используется для управления данными в реляционных базах данных.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Swift_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank" id="swift" class="Apps Mobile">
+                        <article>
+                            <img src="resources/pl_logos/Swift.svg" alt="Swift logo" height="200px" width="200px">
+                            <h1> Swift </h1>
+                            <p>Открытый мультипарадигмальный компилируемый язык программирования общего назначения, разработанный и поддерживаемый компанией Apple.</p>
+                        </article>       
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/TypeScript" target="_blank" id="typescript" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/TypeScript.svg" alt="TypeScript logo" height="200px" width="200px">
+                            <h1> TypeScript </h1>
+                            <p>Расширение JavaScript с поддержкой статической типизации, облегчающее разработку сложных приложений.</p>
+                        </article>
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/Visual_Basic_.NET" target="_blank" id="visualbasic" class="Apps">
+                        <article>
+                            <img src="resources/pl_logos/Visual Basic.svg" alt="Visual Basic logo" height="200px" width="200px">
+                            <h1> Visual Basic </h1>
+                            <p>Высокоуровневый язык программирования, широко применяется для разработки простых приложений под Windows.</p>
+                        </article>
+                    </a>
+                    <a id="notfound" style="display: none;">
+                        <article>
+                            <img src="resources/icons/not_found.svg" alt="not found" height="200px" width="200px">
+                            <h1> Язык не найден </h1>
+                            <p>В каталоге не было найдено языка программирования с названием, сооветствующим Вашему запросу.</p>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer wrapper">
+                2024 © BOEK Team
+            </div>
+        </footer>
+    </body>
+</html>

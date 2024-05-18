@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> CodeL </title>
+        <link href="resources/main/icon.svg" rel="icon">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="scripts.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <div class="header wrapper"> 
+                <svg height="45%" viewBox="0 0 481.41 80.37">
+                    <defs>
+                      <style>
+                        .logo {
+                          fill: url(#blueGradient);
+                          stroke-width: 0px;
+                        }
+                      </style>
+                      <linearGradient id="blueGradient" data-name="blueGradient" x1="0" y1="40.19" x2="481.41" y2="40.19" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#7bd5f5"/>
+                        <stop offset=".04" stop-color="#7ac9f5"/>
+                        <stop offset=".12" stop-color="#79abf5"/>
+                        <stop offset=".22" stop-color="#787ff6"/>
+                        <stop offset=".49" stop-color="#4adede"/>
+                        <stop offset=".75" stop-color="#1ca7ec"/>
+                        <stop offset=".8" stop-color="#1ca3e9"/>
+                        <stop offset=".84" stop-color="#1c97e0"/>
+                        <stop offset=".89" stop-color="#1c83d3"/>
+                        <stop offset=".93" stop-color="#1d67bf"/>
+                        <stop offset=".98" stop-color="#1e44a7"/>
+                        <stop offset="1" stop-color="#1f2f98"/>
+                      </linearGradient>
+                    </defs>
+                    <path class="logo" d="M44.83,80.37c-14.5,0-25.6-3.38-33.3-10.14C3.85,63.47,0,53.43,0,40.13S3.85,16.89,11.54,10.09C19.23,3.29,30.33-.07,44.83,0l39.56.22v14.19h-38.35c-9.52,0-16.59,2.03-21.21,6.1-4.62,4.06-6.92,10.61-6.92,19.62s2.31,15.57,6.92,19.68,11.68,6.15,21.21,6.15h39.45v14.41h-40.66ZM136.7,80.37c-9.82,0-17.47-2.46-22.97-7.37-5.49-4.91-8.24-12.14-8.24-21.67s2.75-16.87,8.24-21.78c5.49-4.91,13.15-7.37,22.97-7.37h20.33c9.82,0,17.47,2.46,22.97,7.37,5.5,4.92,8.24,12.18,8.24,21.78s-2.75,16.76-8.24,21.67c-5.49,4.92-13.15,7.37-22.97,7.37h-20.33ZM136.7,67.62h20.33c4.76,0,8.41-1.33,10.93-3.99,2.53-2.66,3.79-6.76,3.79-12.3s-1.26-9.76-3.79-12.42c-2.53-2.66-6.17-3.99-10.93-3.99h-20.33c-4.76,0-8.41,1.33-10.93,3.99-2.53,2.66-3.79,6.8-3.79,12.42s1.26,9.64,3.79,12.3c2.53,2.66,6.17,3.99,10.93,3.99ZM239.99,79.82c-9.82,0-17.47-2.44-22.97-7.32s-8.24-11.93-8.24-21.17,2.75-16.41,8.24-21.28,13.15-7.32,22.97-7.32h36.81v12.75h-36.81c-4.76,0-8.41,1.31-10.93,3.94-2.53,2.62-3.79,6.6-3.79,11.92s1.26,9.18,3.79,11.81c2.53,2.62,6.17,3.94,10.93,3.94h37.91v12.75h-37.91ZM264.72,79.82V.56h15.93v79.26h-15.93ZM334.6,80.37c-9.82,0-17.47-2.46-22.97-7.37-5.49-4.91-8.24-12.14-8.24-21.67s2.75-16.87,8.24-21.78c5.5-4.91,13.15-7.37,22.97-7.37h27.47c6.45,0,11.37,1.53,14.78,4.6,3.41,3.07,5.11,7.45,5.11,13.14,0,11.6-6.63,17.4-19.89,17.4h-41.54c1.54,6.87,6.23,10.31,14.07,10.31h44.5v12.75h-44.5ZM334.6,34.92c-7.55,0-12.2,3.21-13.96,9.64h40.66c1.46,0,2.62-.44,3.46-1.33.84-.89,1.26-2.11,1.26-3.66,0-3.1-1.58-4.66-4.72-4.66h-26.7ZM406.36,79.82V.56h17.58v64.85h57.47v14.41h-75.05Z"/>
+                </svg>
+                <div class="top-buttons-container"> 
+                    <button class="top-button" onclick="languageSwitch('ru');" title="Switch language"> 
+                        <svg class="btn-icon" width="70" height="70" fill="none" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z"/>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12H12H19"/>
+                        </svg>
+                    </button>
+                    <button class="top-button" onclick="toggleTheme();" title="Switch light/dark theme"> 
+                        <svg class="btn-icon" width="70px" height="70px" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.25 15.7499C17.2352 16.2904 16.23 16.25 15 16.25C10.9959 16.25 7.75 13.0041 7.75 9.00001C7.75 7.77001 7.70951 6.76474 8.25 5.74994C5.96125 6.96891 4.75 9.2259 4.75 12C4.75 16.004 7.99594 19.25 12 19.25C14.7741 19.25 17.031 18.0387 18.25 15.7499Z"/>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 4.75C16 6.95914 14.9591 9 12.75 9C14.9591 9 16 11.0409 16 13.25C16 11.0409 17.0409 9 19.25 9C17.0409 9 16 6.95914 16 4.75Z"/>
+                        </svg>
+                    </button>
+                    <button class="top-button" onclick="toggleTheme();" style="display: none;" title="Switch light/dark theme"> 
+                        <svg class="btn-icon" height="70px" width="70px" fill="none" viewBox="0 0 24 24">
+                            <circle stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" cx="12" cy="12" r="3.2"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M12,3.6v2.8"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M17.6,6.4l-1.9,1.9"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M20.4,12h-2.8"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M17.6,17.6l-1.9-1.9"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M12,17.6v2.8"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M8.3,15.7l-1.9,1.9"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M6.4,12H3.6"/>
+                            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  d="M8.3,8.3L6.4,6.4"/>
+                        </svg>
+                        
+                    </button>
+                    <button class="top-button" onclick="backToSearch();" title="Return to search"> 
+                        <svg class="btn-icon" width="70" height="70" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="search-block">
+                <div class="search-block-content wrapper">
+                    <span class="tagline"> Code with <span> choice </span> !</span>
+                    <form class="searchbar" onsubmit="return false;">
+                        <input type="search" placeholder="Search by name" onfocus="searchbarFocus();" onblur="searchbarUnfocus();">
+                        <button type="submit" onclick="searchByName();">
+                            <svg class="btn-icon" height="90%" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M77 77L58.3793 58.3793M5 36.0345C5 18.8946 18.8946 5 36.0345 5C53.1745 5 67.069 18.8946 67.069 36.0345C67.069 53.1745 53.1745 67.069 36.0345 67.069C18.8946 67.069 5 53.1745 5 36.0345Z" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>   
+                        </button>
+                    </form>   
+                    <div class="categories-container">
+                        <button class="category" onclick="searchByCategory('All');"> All categories </button>
+                        <button class="category" onclick="searchByCategory('Web');"> Web-development </button>
+                        <button class="category" onclick="searchByCategory('Games');"> Game development </button>
+                        <button class="category" onclick="searchByCategory('Apps');"> App development </button>
+                        <button class="category" onclick="searchByCategory('Mobile');"> Mobile development </button>
+                        <button class="category" onclick="searchByCategory('OSs');"> OS development </button>
+                        <button class="category" onclick="searchByCategory('DS');"> Data science </button>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-block">
+                <div class="catalog-content wrapper">
+                    <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank" id="assemblylanguage" class="OSs">
+                        <article>
+                            <img src="resources/pl_logos/ASM.svg" alt="Assembly Language logo" height="200px" width="200px">
+                            <h1> Assembly Language </h1>
+                            <p>A low-level programming language that allows you to directly control computer hardware.</p>
+                        </article> 
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" id="c" class="OSs">
+                        <article>
+                            <img src="resources/pl_logos/C.svg" alt="C logo" height="200px" width="200px">
+                            <h1> C </h1>
+                            <p>A low-level programming language widely used for operating system development and systems programming.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank" id="c#" class="Games Apps">
+                        <article>
+                            <img src="resources/pl_logos/C_sharp.svg" alt="C# logo" height="200px" width="200px">
+                            <h1> C# </h1>
+                            <p>An object-oriented programming language developed by Microsoft, often used to create applications for the .NET platform.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" id="c++" class="Games Apps DS">
+                        <article>
+                            <img src="resources/pl_logos/C++.svg" alt="C++ logo" height="200px" width="200px">
+                            <h1> C++ </h1>
+                            <p>A high-level programming language, an extension of the C language, used for system and application software development.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Clojure" target="_blank" id="clojure" class="Web Mobile Games DS">
+                        <article>
+                            <img src="resources/pl_logos/Clojure.svg" alt="Clojure logo" height="200px" width="200px">
+                            <h1> Clojure </h1>
+                            <p>A modern dialect of Lisp, a general-purpose programming language that supports interactive development, encourages functional programming and makes it easier to support multithreading.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" id="css" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/CSS.svg" alt="CSS logo" height="200px" width="200px">
+                            <h1> CSS </h1>
+                            <p>A formal language for decorating and describing the appearance of a document written using a markup language.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" target="_blank" id="dart" class="Web Mobile">
+                        <article>
+                            <img src="resources/pl_logos/Dart.svg" alt="Dart logo" height="200px" width="200px">
+                            <h1> Dart </h1>
+                            <p>An object-oriented programming language created by Google, used to develop mobile and web applications.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Delphi_(software)" target="_blank" id="delphi" class="Apps Web">
+                        <article>
+                            <img src="resources/pl_logos/Delphi.svg" alt="Delphi logo" height="200px" width="200px">
+                            <h1> Delphi </h1>
+                            <p>A high-level programming language widely used for developing applications for Windows.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Elixir_(programming_language)" target="_blank" id="elixir" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/Elixir.svg" alt="Elixir logo" height="200px" width="200px">
+                            <h1> Elixir </h1>
+                            <p>A functional programming language running on the Erlang virtual machine, it is used to create distributed and fault-tolerant systems.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/F_Sharp_(programming_language)" target="_blank" id="f#" class="Apps DS">
+                        <article>
+                            <img src="resources/pl_logos/F_Sharp.svg" alt="F# logo" height="200px" width="200px">
+                            <h1> F# </h1>
+                            <p>A multi-paradigm programming language from the .NET family of languages ​​that supports functional programming in addition to imperative and object-oriented programming.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Go_(programming_language)" target="_blank" id="go" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/Go.svg" alt="Go logo" height="200px" width="200px">
+                            <h1> Go </h1>
+                            <p>A compiled programming language developed by Google, it is often used to create web-based applications and cloud services.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" id="html" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/HTML.svg" alt="HTML logo" height="200px" width="200px">
+                            <h1> HTML </h1>
+                            <p>A standardized hypertext markup language used to structure and display a web page and its content.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" id="java" class="Web Games Apps DS Mobile">
+                        <article>
+                            <img src="resources/pl_logos/Java.svg" alt="Java logo" height="200px" width="200px">
+                            <h1> Java </h1>
+                            <p>An object-oriented programming language widely used for creating enterprise applications and web applications.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" id="javascript" class="Web Mobile">
+                        <article>
+                            <img src="resources/pl_logos/JavaScript.svg" alt="JavaScript logo" height="200px" width="200px">
+                            <h1> JavaScript </h1>
+                            <p>A scripting programming language used to create interactive web pages.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="_blank" id="kotlin" class="Mobile Web Apps">
+                        <article>
+                            <img src="resources/pl_logos/Kotlin.svg" alt="Kotlin logo" height="200px" width="200px">
+                            <h1> Kotlin </h1>
+                            <p>A statically typed programming language compatible with Java, it is widely used for developing Android and web applications.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" target="_blank" id="lua" class="Games">
+                        <article>
+                            <img src="resources/pl_logos/Lua.svg" alt="Lua logo" height="200px" width="200px">
+                            <h1> Lua </h1>
+                            <p>A lightweight scripting programming language, often used in various applications and games to expand functionality.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/MATLAB" target="_blank" id="matlab" class="DS">
+                        <article>
+                            <img src="resources/pl_logos/Matlab.svg" alt="Matlab logo" height="200px" width="200px">
+                            <h1> Matlab </h1>
+                            <p>A high-level interpreted programming language for developing, performing engineering and mathematical calculations, working with matrix databases, and visualization.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Objective-C" target="_blank" id="objectivec" class="Mobile Apps">
+                        <article>
+                            <img src="resources/pl_logos/OBJ-C.svg" alt="Objective-C logo" height="200px" width="200px">
+                            <h1> Objective-C </h1>
+                            <p>A programming language used by Apple developers. Used for macOS and iOS operating systems, many of whose applications are written in Objective-C.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" id="php" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/PHP.svg" alt="PHP logo" height="200px" width="200px">
+                            <h1> PHP </h1>
+                            <p>A common, open-source, general-purpose programming language designed for web development and its code can be embedded directly in HTML.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" id="python" class="DS Apps Web Games">
+                        <article>
+                            <img src="resources/pl_logos/Python.svg" alt="Python logo" height="200px" width="200px">
+                            <h1> Python </h1>
+                            <p>A high-level programming language known for its simplicity and readability of code, it is often used for developing web applications, scientific computing, and task automation.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank" id="r" class="DS">
+                        <article>
+                            <img src="resources/pl_logos/R.svg" alt="R logo" height="200px" width="200px">
+                            <h1> R </h1>
+                            <p>A programming language and development environment specializing in statistical analysis and data visualization.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank" id="ruby" class="Web Apps">
+                        <article>
+                            <img src="resources/pl_logos/Ruby.svg" alt="Ruby logo" height="200px" width="200px">
+                            <h1> Ruby </h1>
+                            <p>Known for its simplicity and productivity, the dynamic programming language is often used for web development.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank" id="rust" class="OSs Web">
+                        <article>
+                            <img src="resources/pl_logos/Rust.svg" alt="Rust logo" height="200px" width="200px">
+                            <h1> Rust </h1>
+                            <p>A systems programming language with an emphasis on security and performance, widely used for system software development.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)" target="_blank" id="scala" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/Scala.svg" alt="Scala logo" height="200px" width="200px">
+                            <h1> Scala </h1>
+                            <p>A multi-paradigm programming language running on the Java platform, it is often used to create distributed applications.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" id="sql" class="DS Web">
+                        <article>
+                            <img src="resources/pl_logos/SQL.svg" alt="SQL logo" height="200px" width="200px">
+                            <h1> SQL </h1>
+                            <p>A structured database query language used to manage data in relational databases.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" target="_blank" id="swift" class="Apps Mobile">
+                        <article>
+                            <img src="resources/pl_logos/Swift.svg" alt="Swift logo" height="200px" width="200px">
+                            <h1> Swift </h1>
+                            <p>An open, multi-paradigm, compiled, general-purpose programming language developed and maintained by Apple.</p>
+                        </article>       
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/TypeScript" target="_blank" id="typescript" class="Web">
+                        <article>
+                            <img src="resources/pl_logos/TypeScript.svg" alt="TypeScript logo" height="200px" width="200px">
+                            <h1> TypeScript </h1>
+                            <p>A statically typed JavaScript extension that makes it easier to develop complex applications.</p>
+                        </article>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Visual_Basic_(.NET)" target="_blank" id="visualbasic" class="Apps">
+                        <article>
+                            <img src="resources/pl_logos/Visual Basic.svg" alt="Visual Basic logo" height="200px" width="200px">
+                            <h1> Visual Basic </h1>
+                            <p>A high-level programming language widely used for developing simple applications for Windows.</p>
+                        </article>
+                    </a>
+                    <a id="notfound" style="display: none;">
+                        <article>
+                            <img src="resources/icons/not_found.svg" alt="not found" height="200px" width="200px">
+                            <h1> Not found </h1>
+                            <p>No programming language with a name matching your request was found in the catalog.</p>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer wrapper">
+                2024 © BOEK Team
+            </div>
+        </footer>
+    </body>
+</html>
