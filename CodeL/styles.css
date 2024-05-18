@@ -130,7 +130,6 @@ header {
 
 
 main {
-    min-height: 100vh;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -253,6 +252,7 @@ span {
 
 
 .catalog-content {
+    min-height: 35vmin;
     flex-wrap: wrap;
     align-items: stretch;
 }
